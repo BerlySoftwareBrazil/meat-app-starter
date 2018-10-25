@@ -11,7 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { RestaurantesComponent } from './restaurantes/restaurantes.component';
 import { RestaurateComponent } from './restaurantes/restaurate/restaurate.component';
-
+import { ResturantesService} from './restaurantes/restaurantes.service'
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { RestaurateComponent } from './restaurantes/restaurate/restaurate.compon
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [ResturantesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
