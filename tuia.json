@@ -1,0 +1,431 @@
+{
+  "posts": [{
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }],
+  "comments": [{
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }],
+  "profile": {
+    "name": "typicode"
+  },
+  "coberturas": [{
+      "id": 1,
+      "name": "Acidentes",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida"
+        }]
+      },
+      "base": false,
+      "parentId": 2
+    },
+    {
+      "id": 2,
+      "name": "Morte",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida"
+        }]
+      },
+      "base": true,
+      "parentId": 2
+    },
+    {
+      "id": 3,
+      "name": "Morte Acidental",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 2,
+          "name": "Morte"
+        }]
+      },
+      "base": false,
+      "parentId": 2
+    },
+    {
+      "id": 4,
+      "name": "Incêndio, Queda de Raio, Explosão e Fumaça",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": true,
+      "parentId": null
+    },
+    {
+      "id": 5,
+      "name": "Danos Elétricos",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": false,
+      "parentId": 4
+    },
+    {
+      "id": 6,
+      "name": "Responsabilidade Civil Empregador",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": false,
+      "parentId": 4
+    },
+    {
+      "id": 7,
+      "name": "Subtração de Bens e Mercadorias",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": false,
+      "parentId": 4
+    },
+    {
+      "id": 8,
+      "name": "Despesas Fixas",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": false,
+      "parentId": 4
+    },
+    {
+      "id": 9,
+      "name": "Equipamentos Eletrônicos com ou sem Subtração",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": false,
+      "parentId": 4
+    },
+    {
+      "id": 10,
+      "name": "Equipamentos Estacionários",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": false,
+      "parentId": 4
+    },
+    {
+      "id": 11,
+      "name": "Responsabilidade Civil",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": false,
+      "parentId": 4
+    },
+    {
+      "id": 12,
+      "name": "Lucros Cessantes",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": false,
+      "parentId": 4
+    },
+    {
+      "id": 13,
+      "name": "Fidelidade Empregados",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": false,
+      "parentId": 4
+    },
+    {
+      "id": 14,
+      "name": "Tumultos",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": false,
+      "parentId": 4
+    },
+    {
+      "id": 15,
+      "name": "Vendaval, Furacão, Ciclone, Tornado e Queda de Granizo",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 3,
+          "name": "Incêndio"
+        }]
+      },
+      "base": false,
+      "parentId": 4
+    },
+    {
+      "id": 16,
+      "name": "Morte",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": true,
+      "parentId": null
+    },
+    {
+      "id": 17,
+      "name": "Diária de Incapacidade Temporária",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 18,
+      "name": "Doenças Graves",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 19,
+      "name": "Seguro Homem / Seguro Mulher",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 20,
+      "name": "Diagnóstico de Câncer",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 21,
+      "name": "Diária de Internação Hospitalar por Acidente ou Doença",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 22,
+      "name": "Invalidez Funcional Total e Permanente por Doença",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 23,
+      "name": "Morte Acidental",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 24,
+      "name": "Invalidez Permanente por Acidente",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 25,
+      "name": "Diária de Internação Hospitalar por Acidente",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 26,
+      "name": "Diária Internação Hospitalar UTI por Acidente ou Doença",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 27,
+      "name": "Invalidez Funcional Total e Permanente por Doença",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 28,
+      "name": "Invalidez Permanente por Acidente",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 29,
+      "name": "Despesas Médico Hospitalares por Acidente",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 30,
+      "name": "Funeral Familiar (em substituição Individual)",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 31,
+      "name": "Funeral Familiar",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 32,
+      "name": "Rede Descontos",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 33,
+      "name": "Aplicativo Vida Saudável",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    },
+    {
+      "id": 34,
+      "name": "Farma Assist",
+      "tipo": {
+        "TipoCobertura": [{
+          "id": 1,
+          "name": "Vida Pessoal"
+        }]
+      },
+      "base": false,
+      "parentId": 16
+    }
+  ],
+  "TipoCobertura":[
+    {"id":1, "name":"Vida Pessoal"},
+    {"id":2, "name":"Morte"},
+    {"id":3, "name":"Incêndio Empresarial"},
+    {"id":4, "name":"Queda de Raio"},
+    {"id":5, "name":"Vida Empresarial"}
+  ]
+}
